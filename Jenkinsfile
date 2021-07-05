@@ -10,11 +10,10 @@ pipeline{
             }
         }
         stage('Sending email'){
-            steps{
-                echo "This email is getting triggered from the ${SERVER}"
-            }
+            steps
             {
                 echo "This email is getting triggered from the $BUILD_NUMBER"
+                echo "This email is getting triggered from the ${SERVER}"
             }            
         }        
     }
