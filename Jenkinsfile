@@ -18,6 +18,17 @@ pipeline{
                 echo "This email is getting triggered from the $BUILD_NUMBER"
                 echo "This email is getting triggered from the ${SERVER}"
             }            
-        }        
+        }
+    }    
+    post{
+        always{
+            echo "This step will be executed even if your build becomes success or fail"
+        }
+        success{
+            echo "This step will be execued only if your build becomess success"
+        }
+        failure{
+            echo "This step will be execued only if your build becomess failed"
+        }
     }
 }    
