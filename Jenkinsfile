@@ -4,7 +4,7 @@ pipeline{
         SERVER = 'dev'
     }
     parameters {
-        string(name: 'VERSION', description: 'Please select the version that you want to deploy')
+        choice(name: 'VERSION', choices: ['1.1', '1.2', '1.3'], description: 'select the version you want to deploy from drop down')
     }
     stages{
         stage('Build the code'){
