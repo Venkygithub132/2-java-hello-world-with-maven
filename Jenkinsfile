@@ -11,7 +11,7 @@ pipeline{
         }
         stage('Sending email'){
             steps{
-                echo "This email is getting triggered from the ${env.SERVER}"
+                echo "This email is getting triggered from the ${SERVER}"
             }
             {
                 echo "This email is getting triggered from the $BUILD_NUMBER"
