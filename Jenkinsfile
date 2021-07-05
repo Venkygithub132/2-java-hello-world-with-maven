@@ -3,6 +3,9 @@ pipeline{
     environment {
         SERVER = 'dev'
     }
+    parameters {
+        string(name: 'VERSION', description: 'Please select the version that you want to deploy')
+    }
     stages{
         stage('Build the code'){
             steps{
