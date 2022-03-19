@@ -2,6 +2,6 @@ package hello;
 
 public class Greeter {
     public String sayHello() {
-        return "Hi, welcome to the session's";
+        return "Hi, welcome to my tomcat deplyment session ";
     }
 }
